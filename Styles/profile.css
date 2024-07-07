@@ -1,0 +1,287 @@
+*{
+	margin: 0;
+	font-family: "Cabin", sans-serif;
+	font-size: 20px;
+}
+
+body, html{
+	padding-top: 35px;
+/*	height: 100%;*/
+}
+
+.menu-icon{
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+.active{
+	color: white;
+}
+
+.top-nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	background-color: #ce3a60;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	padding: 10px 15px;
+}
+
+.side-nav{
+	line-height: 2;
+	padding-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: top;
+	position: fixed;
+	top: 43px;
+	left: 0;
+	bottom: 0;
+	background-color: #c87484;
+	width: 0;
+	display: none;
+	z-index: 1000;
+}
+
+.close-nav{
+	position: absolute;
+	top: 50%;
+	right: -20px;
+}
+
+.fa-angle-left{
+	font-size: 30px;
+	color: white;
+	background-color: #dd3d38;
+	padding: 10px;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+}
+
+.profile-side-nav{
+	position: absolute;
+	bottom: 20px;
+}
+
+.top-nav p{
+	display: inline-block;
+}
+
+
+.activity-container{
+	display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+    column-gap: 15px;
+    row-gap: 20px;
+}
+
+/*.history-block{
+	display: flex;
+	justify-content: center;
+}*/
+
+.history-block img{
+	width: 180px;
+	height: 180px;
+}
+
+
+.history-container{
+	position: relative;
+	box-shadow: 5px 5px 15px #c7b8b7;
+	border-radius: 5px;
+	display: flex;
+    flex-direction: column;
+    width: 200px;
+    border: 1px solid #c7b8b7;
+    padding: 3px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f1f3;
+}
+
+.history-container:hover .history-block{
+	opacity: .6;
+}
+
+.history-block:hover{
+	opacity: .6;
+}
+
+.history-container:hover .history-name-btn{
+	opacity: 1;
+}
+
+.history-name-btn{
+	position: absolute;
+	bottom: 8px;
+	left: 5px;
+	width: 180px;
+	text-align: center;
+	background-color: #ce3a60;
+	color: white;
+	padding: 4px 5px;
+	opacity: 0;
+/*	pointer-events: none;*/
+	transition: .3s;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.go-to-btn{
+	font-size: 15px;
+}
+
+.search-bar-container{
+	display: flex;
+	justify-content: center;
+/*	column-gap: 20px;*/
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.search-bar{
+	font-size: 18px;
+	font-family: "Cabin", sans-serif;
+	padding: 6px 10px;	
+	border: 1px solid #ce3a60;
+	border-right: none;
+}
+
+.search-bar{
+	outline: none;
+}
+
+.search-btn{
+	border: 1px solid #ce3a60;
+	padding: 5px 10px;
+	cursor: pointer;
+	background-color: #ce3a60;
+	color: white;
+}
+.search-btn i{
+	font-size: 18px;
+}
+
+.activity-head{
+	background-color: black;
+	color: #ce3a60;
+	padding: 5px 10px;
+	border-radius: 5px;
+	display: inline-block;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+
+.activity-head-container{
+	display: flex;
+	justify-content: center;
+}
+
+.go-to-btn{
+	color: white;
+	background-color: #ce3a60;
+	padding: 10px 15px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+.liked-container-top{
+	display: flex;
+	justify-content: center;	
+	margin-bottom: 50px;
+}
+
+.liked-container{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 50px;
+/*	margin-left: 50px;*/
+	border: 1px solid #808080;
+	padding: 10px;
+	width: 350px;
+	border-radius: 5px;
+	box-shadow: 5px 5px 20px #808080;
+
+}
+
+.liked-head{
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+	text-decoration: underline;
+	color: #ce3a60;
+}
+
+.liked-items{
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	line-height: 40px;
+	margin-left: 20px;
+	color: #5caa6d;
+}
+
+.liked-items a{
+	list-style: decimal;
+	color: #5caa6d;
+}
+
+.liked-items a:hover{
+	color: #598f3d;
+}
+
+@media (max-width: 1170px){
+	.activity-container{
+		grid-template-columns: auto auto auto auto;
+	}
+}
+
+@media (max-width: 900px){
+	.activity-container{
+		grid-template-columns: auto auto auto;
+	}
+}
+
+@media (max-width: 670px){
+	.activity-container{
+		grid-template-columns: auto auto;
+	}
+}
+
+@media (max-width: 450px){
+	.activity-container{
+		grid-template-columns: auto;
+	}
+
+	.history-container{
+		width: 300px;
+	}
+
+	.history-block img{
+		width: 250px;
+		height: 250px;
+	}
+
+	.middle-section-nav div{
+		display: none;
+	}
+}
