@@ -15,32 +15,33 @@
 			<p class="torque" onclick="console.log(this)">Torque Foods</p>
 		</div>
 		<div class="middle-section-nav">
-			<div>Categories</div>
+			<div>Search a Recipe</div>
 		</div>
 		<a href="profile.html" class="right-section-nav">
 			<i class="fa-solid fa-user" aria-hidden="true"></i>
 		</a>
 	</nav>
 
+
 	<div class="side-nav">
-		<div><a href="#" class="active">Categories</a></div>
+		<div><a href="home.html">Categories</a></div>
 		<div><a href="area.html">Food By Location</a></div>
-		<div><a href="search.html" onclick="clearDish()">Search</a></div>
+		<div><a href="search.html" class="active" onclick="clearDish()">Search</a></div>
 		<a href="profile.html" class="profile-side-nav">
 			<i class="fa-solid fa-user" aria-hidden="true"></i> Profile
 		</a>
 		<div class="close-nav" onclick="closeNav()"><i class="fa-solid fa-angle-left fa-bounce"></i></div>
 	</div>
 
-	<form action="search.html" onsubmit="getInput()" class="search-bar-container">
-		<div class="search-input"><input class="search-bar" type="text" placeholder="eg. Chicken" required /></div>
-		<button type="submit" class="search-btn" onclick="getInput()"><i class="fa-solid fa-magnifying-glass"></i></button>
 
+	<form action="search.html" onsubmit="getInput()" class="search-bar-container">
+		<div class="search-input"><input class="search-bar" type="text" placeholder="eg. Cake" required /></div>
+		<button type="submit" class="search-btn" onclick="getInput()"><i class="fa-solid fa-magnifying-glass"></i></button>
 	</form>
 
 
 	<div class="category-head">
-		Foods By Category
+		Items By Category
 	</div>
 	<div class="category-section-container-head">
 		<div class="category-width-layout">
@@ -49,14 +50,15 @@
 		</div>
 	</div>
 
-	<div class="info-box-container">
+
+<!-- 	<div class="info-box-container">
 		<div class="close-btn" onclick="closeContainer()"><i class="fa-solid fa-circle-xmark" style="color: #eb2442;"></i></div>
 		<div class="category-title"></div>
 		<div class="message-container">
 		</div>
-	</div>
+	</div> -->
 
 <script type="text/javascript" src="../Scripts/fetchDish.js"></script>
-<script type="text/javascript" src="../Scripts/home.js"></script>
+<script type="text/javascript" src="../Scripts/search.js"></script>
 </body>
 </html>
