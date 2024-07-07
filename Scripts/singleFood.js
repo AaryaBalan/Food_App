@@ -2,9 +2,6 @@ const dish = localStorage.getItem('dish')
 
 getFoodById(dish)
 
-
-
-
 function openNav() {
 	const sideNav = document.querySelector('.side-nav')
 	sideNav.style.display = 'flex'
