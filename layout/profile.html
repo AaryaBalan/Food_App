@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/d8ca3bfef7.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Cabin:wdth,wght@75..100,400..700&amp;family=Jersey+20+Charted&amp;family=Silkscreen:wght@400;700&amp;display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../Styles/profile.css">
+	<title>Track Food - Torque</title>
+</head>
+<body>
+	<nav class="top-nav">
+		<div class="left-section-nav">
+			<span class="menu-icon" onclick="openNav()"><i class="fa-solid fa-bars" aria-hidden="true"></i></span>
+			<p class="torque" onclick="console.log(this)">Torque Foods</p>
+		</div>
+		<div class="middle-section-nav">
+			<div>Profile</div>
+		</div>
+		<a href="profile.html" class="right-section-nav">
+			<i class="fa-solid fa-user" aria-hidden="true"></i>
+		</a>
+	</nav>
+
+	<div class="side-nav">
+		<div><a href="home.html">Categories</a></div>
+		<div><a href="area.html">Food By Location</a></div>
+		<div><a href="search.html" onclick="clearDish()">Search</a></div>
+		<a href="profile.html" class="profile-side-nav active">
+			<i class="fa-solid fa-user" aria-hidden="true"></i> Profile
+		</a>
+		<div class="close-nav" onclick="closeNav()"><i class="fa-solid fa-angle-left fa-bounce"></i></div>
+	</div>
+
+	<form action="search.html" onsubmit="getInput()" class="search-bar-container">
+		<div class="search-input"><input class="search-bar" type="text" placeholder="eg. Chicken" required /></div>
+		<button type="submit" class="search-btn" onclick="getInput()"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+	</form>
+
+	<div class="activity-head-container">
+		<div class="activity-head">
+			Your Activity
+		</div>
+	</div>
+	<div class="category-section-container-head">
+		<div class="category-width-layout">
+			<div class="category-section-container activity-container">
+			</div>
+		</div>
+	</div>
+
+	<div class="liked-container-top">
+		<div class="liked-container">
+			<div class="liked-head">Dishes You Likes</div>
+			<ul class="liked-items">
+				
+			</ul>
+		</div>
+	</div>
+
+<script type="text/javascript" src="../Scripts/fetchDish.js"></script>
+<script type="text/javascript" src="../Scripts/profile.js"></script>
+</body>
+</html>
