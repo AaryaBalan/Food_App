@@ -1,6 +1,5 @@
 getFoodArea()
 
-
 function closeContainer(){
 	document.querySelector('.top-nav').style.opacity = 1
 	document.querySelector('.area-section-container-head').style.opacity = 1
@@ -8,14 +7,9 @@ function closeContainer(){
 	document.querySelector('.info-box-container').style.zIndex = -100
 }
 
-
-
-
-
 function clearDish(){
 	localStorage.removeItem('searchDish')
 }
-
 
 function openNav() {
 	const sideNav = document.querySelector('.side-nav')
